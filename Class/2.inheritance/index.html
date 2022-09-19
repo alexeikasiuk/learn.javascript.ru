@@ -7,7 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <p id="wrap">Time:<span id="time"></span></p>
-    <script src="task1.js"></script>
+    <p>Clock:<span id="time"></span></p>
+    <script src="clock.js"></script>
+    <script src="extended-clock.js"></script>
+    <script>
+      let clock = new ExtendedClock({ template: 'h:m:s', percision: 2000 });
+      clock.start();
+    </script>
   </body>
 </html>
